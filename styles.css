@@ -29,6 +29,8 @@ a:focus-visible {
   outline-offset: 2px;
 }
 
+/* ---------- HEADER & NAV ---------- */
+
 .header {
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   color: white;
@@ -59,6 +61,8 @@ a:focus-visible {
   opacity: 0.95;
 }
 
+/* ---------- SECTIONS ---------- */
+
 .section {
   max-width: 900px;
   margin: 4rem auto;
@@ -85,6 +89,8 @@ h2 {
   width: 100%;
   height: auto;
 }
+
+/* ---------- PRICING ---------- */
 
 .pricing-intro {
   max-width: 600px;
@@ -121,6 +127,8 @@ h2 {
   border: 2px solid var(--primary);
 }
 
+/* ---------- BUTTONS ---------- */
+
 .button {
   display: inline-block;
   margin-top: 1.2rem;
@@ -144,10 +152,87 @@ h2 {
   filter: brightness(0.95);
 }
 
+/* ---------- FOOTER ---------- */
+
 .footer {
   margin-top: 5rem;
   padding: 2rem 1rem;
   text-align: center;
   font-size: 0.9rem;
   background-color: #ece9f7;
+}
+
+/* ---------- AUTH PAGES ---------- */
+
+.auth-body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-container {
+  background-color: var(--card);
+  color: var(--text);
+  max-width: 420px;
+  width: 100%;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.auth-container h1 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.auth-intro {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+input {
+  padding: 0.65rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+input:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.help-text {
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  color: #4b5563;
+}
+
+.full-width {
+  width: 100%;
+  text-align: center;
+}
+
+.auth-switch {
+  margin-top: 1.8rem;
+  font-size: 0.95rem;
+  text-align: center;
 }

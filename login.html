@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login – FocusBuddies</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="auth-body">
+  <main class="auth-container">
+    <h1>Welcome back</h1>
+    <p class="auth-intro">
+      Log in to continue your focused work sessions and stay accountable
+      with your focus buddies.
+    </p>
+
+    <form class="auth-form" method="post" action="#">
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          autocomplete="email"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          autocomplete="current-password"
+        />
+      </div>
+
+      <button type="submit" class="button secondary full-width">
+        Log in
+      </button>
+    </form>
+
+    <p class="auth-switch">
+      Don’t have an account?
+      <a href="signup.html">Create one here</a>.
+    </p>
+  </main>
+</body>
+</html>
