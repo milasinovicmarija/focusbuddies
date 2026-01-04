@@ -3,63 +3,121 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FocusBuddies – Study & Work Together</title>
+  <title>FocusBuddies – Focus Better Together</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header class="header">
-    <h1>FocusBuddies</h1>
-    <p class="tagline">Track time. Stay focused. Plan together.</p>
-    <a href="#pricing" class="button">Start Free Trial</a>
+    <nav class="nav" aria-label="Main navigation">
+      <h1 class="logo">FocusBuddies</h1>
+      <a href="login.html" class="button primary">Begin Focusing</a>
+    </nav>
+
+    <div class="hero">
+      <h2>Build focus through shared accountability</h2>
+      <p class="tagline">
+        FocusBuddies helps you stay productive by tracking focused time,
+        working alongside trusted partners, and turning plans into
+        achievable routines.
+      </p>
+    </div>
   </header>
 
   <main>
-    <section class="section">
-      <h2>What is FocusBuddies?</h2>
+    <section class="section" id="about">
+      <h2>What does FocusBuddies do?</h2>
       <p>
-        FocusBuddies is a website that helps you track your learning or working time,
-        stay focused by blocking distracting websites, and plan schedules together
-        with friends or colleagues.
+        FocusBuddies is a productivity platform designed for students,
+        professionals, and creatives who struggle to stay consistent
+        when working alone.
+      </p>
+      <p>
+        By combining time tracking with shared focus sessions, the app
+        creates a sense of accountability without pressure. You decide
+        your goals, choose your focus partners, and work in a calm,
+        distraction-reduced environment.
       </p>
     </section>
 
-    <section class="section features">
-      <h2>Features</h2>
-      <ul class="feature-list">
-        <li>⏱ Track study and work time</li>
-        <li>👥 Compare progress with friends</li>
-        <li>🚫 Block distracting websites</li>
-        <li>📅 Upload and share schedules</li>
-        <li>🧠 Simple and distraction-free design</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>Who is it for?</h2>
+    <section class="section graph-section" aria-labelledby="graph-title">
+      <h2 id="graph-title">Improved consistency over time</h2>
       <p>
-        FocusBuddies is designed for <strong>students</strong> and <strong>workers</strong>
-        who want to stay productive while supporting each other.
+        Users who work with focus buddies show a clear increase in
+        completed focus sessions and overall consistency after just a
+        few weeks of use.
       </p>
+
+      <figure class="graph" role="img" aria-label="Graph showing productivity improvement over four weeks">
+        <svg viewBox="0 0 400 200" aria-hidden="true">
+          <polyline
+            points="20,160 120,130 220,90 320,40"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="4"
+          />
+          <line x1="20" y1="160" x2="380" y2="160" stroke="currentColor" />
+          <line x1="20" y1="20" x2="20" y2="160" stroke="currentColor" />
+        </svg>
+        <figcaption>
+          Average completed focus sessions per week after joining FocusBuddies
+        </figcaption>
+      </figure>
     </section>
 
-    <section class="section" id="pricing">
+    <section class="section pricing" id="pricing">
       <h2>Pricing</h2>
-      <div class="card">
-        <h3>Subscription Model</h3>
-        <p>
-          FocusBuddies is available as a monthly or yearly subscription.
-          One simple plan with all features included.
-        </p>
-        <a href="#" class="button secondary">Subscribe Now</a>
+      <p class="pricing-intro">
+        FocusBuddies offers flexible plans so you can choose the level
+        of structure and collaboration that fits your needs.
+      </p>
+
+      <div class="pricing-grid">
+        <article class="card">
+          <h3>Free</h3>
+          <p class="price">€0</p>
+          <ul>
+            <li>Track your focused work time</li>
+            <li>Personal daily and weekly statistics</li>
+            <li>Basic session history</li>
+          </ul>
+          <a href="login.html" class="button secondary">Get Started</a>
+        </article>
+
+        <article class="card highlighted">
+          <h3>Plus</h3>
+          <p class="price">€6 / month</p>
+          <ul>
+            <li>Everything in Free</li>
+            <li>Up to 5 focus buddies</li>
+            <li>Shared focus sessions</li>
+            <li>Group progress overview</li>
+          </ul>
+          <a href="login.html" class="button primary">Choose Plus</a>
+        </article>
+
+        <article class="card">
+          <h3>Pro</h3>
+          <p class="price">€12 / month</p>
+          <ul>
+            <li>Unlimited focus buddies</li>
+            <li>Calendar upload and planning</li>
+            <li>Advanced productivity insights</li>
+            <li>Priority feature access</li>
+          </ul>
+          <a href="login.html" class="button secondary">Choose Pro</a>
+        </article>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p><strong>Company:</strong> FocusBuddies GmbH</p>
-    <p><strong>Location:</strong> Vienna, Austria</p>
-    <p><strong>Employees:</strong> 13</p>
+    <p>© 2026 FocusBuddies GmbH · Vienna, Austria</p>
+    <p>
+      <a href="#">Accessibility</a> ·
+      <a href="#">Privacy</a> ·
+      <a href="#">Imprint</a>
+    </p>
   </footer>
 </body>
 </html>
