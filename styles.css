@@ -51,9 +51,8 @@ a:focus-visible {
   gap: 0.75rem;
 }
 .logo-image {
-  height: 40px;
+  max-height: 40px;
   width: auto;
-  display: block;
 }
 .logo {
   font-size: 1.6rem;
