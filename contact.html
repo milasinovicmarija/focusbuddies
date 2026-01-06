@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us – FocusBuddies</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <h1 class="logo"><a href="index.html" style="color: white; text-decoration: none;">FocusBuddies</a></h1>
+      <div class="nav-buttons">
+        <a href="index.html" class="button primary">Begin Focusing</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section contact-section">
+      <h2>Get in Touch</h2>
+      <p class="contact-intro">
+        If you have questions or want to leave us a comment please fill the sign up form and we'll get back to you as soon as we can. The current average response time is <strong> 1-2 business days</strong>.
+      </p>
+
+      <div class="contact-container">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              required 
+              placeholder="Your full name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              required 
+              placeholder="your.email@example.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a topic...</option>
+              <option value="general">General</option>
+              <option value="support">Technical Support</option>
+              <option value="billing">Billing Inquiry</option>
+              <option value="noidea">I ran out of ideas...</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              rows="6" 
+              required 
+              placeholder="Tell us what's on your mind..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="button secondary full-width">Send Message</button>
+
+          <div id="formStatus" class="form-status" role="alert" aria-live="polite"></div>
+        </form>
+
+        <aside class="contact-info">
+          <h3>Other Ways to Reach Us</h3>
+          
+          <div class="info-item">
+            <strong>Email:</strong>
+            <p><a href="mailto:contact@focusbuddies.com">contact@focusbuddies.com</a></p>
+          </div>
+
+          <div class="info-item">
+            <strong>Location:</strong>
+            <p>
+              FocusBuddies GmbH<br>
+              Kärtner Straße 123<br>
+              1000 Vienna, Austria
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 FocusBuddies GmbH · Vienna, Austria</p>
+    <p>
+      <a href="#">Accessibility</a> ·
+      <a href="#">Privacy</a> ·
+      <a href="#">Imprint</a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const statusDiv = document.getElementById('formStatus');
+      const form = e.target;
+ 
+      statusDiv.className = 'form-status success';
+      statusDiv.textContent = 'Thank you! Your message has been received. We'll get back to you soon. (For the professors, it hasn't actually been recieved :( )';
+      
+      setTimeout(() => {
+        form.reset();
+        setTimeout(() => {
+          statusDiv.className = 'form-status';
+          statusDiv.textContent = '';
+        }, 3000);
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
