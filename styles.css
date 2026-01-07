@@ -244,9 +244,8 @@ input:focus-visible {
 }
 
 .cookie-banner {
-  display: none;
   position: fixed;
-  bottom: -150px; /* hidden initially */
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   max-width: 950px;
@@ -257,18 +256,12 @@ input:focus-visible {
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
   z-index: 10000;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.5rem;
   font-size: 1rem;
-  transition: bottom 0.3s ease, opacity 0.3s ease;
-  opacity: 0;
-}
-
-.cookie-banner.show {
-  bottom: 20px;
-  opacity: 1;
 }
 
 .cookie-banner p {

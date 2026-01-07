@@ -174,36 +174,15 @@
     </section>
   </main>
 
-  <div id="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent" class="cookie-banner">
+  <div id="cookie-banner" class="cookie-banner">
   <p>
     We use cookies to improve your experience on FocusBuddies. You can accept or reject non-essential cookies.
   </p>
   <div class="cookie-buttons">
-    <button id="accept-cookies" class="text">Accept</button>
-    <button id="reject-cookies" class="text">Reject</button>
+    <button class="cookie-btn" onclick="this.closest('#cookie-banner').style.display='none'">Accept</button>
+    <button class="cookie-btn secondary" onclick="this.closest('#cookie-banner').style.display='none'">Reject</button>
   </div>
-    
 </div>
-  <script>
-  const banner = document.getElementById('cookie-banner');
-
-  if (!localStorage.getItem('cookieConsent')) {
-    banner.style.display = 'flex';
-    setTimeout(() => banner.classList.add('show'), 50);
-  }
-
-  document.getElementById('accept-cookies').addEventListener('click', () => {
-    localStorage.setItem('cookieConsent', 'accepted');
-    banner.classList.remove('show');
-    setTimeout(() => banner.style.display = 'none', 300);
-  });
-
-  document.getElementById('reject-cookies').addEventListener('click', () => {
-    localStorage.setItem('cookieConsent', 'rejected');
-    banner.classList.remove('show');
-    setTimeout(() => banner.style.display = 'none', 300);
-  });
-</script>
   
   <footer class="footer">
     <p>© 2026 FocusBuddies GmbH · Vienna, Austria</p>
