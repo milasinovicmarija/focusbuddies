@@ -244,6 +244,22 @@ input:focus-visible {
   text-align: center;
 }
 
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  padding-top: 56.25%;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
 .planner-section {
   margin-bottom: 4rem;
 }
