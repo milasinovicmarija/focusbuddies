@@ -243,6 +243,40 @@ input:focus-visible {
   text-align: center;
 }
 
+.planner-section {
+  margin-bottom: 4rem;
+}
+
+.planner-content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.planner-text {
+  flex: 1 1 320px;
+}
+
+.planner-image {
+  flex: 1 1 280px;
+  margin: 0;
+}
+
+.planner-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.planner-image figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+
 .cookie-banner {
   position: fixed;
   bottom: 20px;
