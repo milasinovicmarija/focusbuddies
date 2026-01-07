@@ -99,6 +99,12 @@ h2 {
   color: var(--primary-dark);
 }
 
+.graph img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .pricing-intro {
   max-width: 600px;
 }
