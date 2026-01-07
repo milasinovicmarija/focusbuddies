@@ -78,7 +78,6 @@ a:focus-visible {
   display: flex;
   justify-content: center;
 }
-/* ---------- SECTIONS ---------- */
 
 .section {
   max-width: 900px;
@@ -107,8 +106,6 @@ h2 {
   height: auto;
 }
 
-/* ---------- PRICING ---------- */
-
 .pricing-intro {
   max-width: 600px;
 }
@@ -135,7 +132,7 @@ h2 {
   padding-left: 1.2rem;
 }
 
-.price {
+h4 {
   font-size: 1.6rem;
   font-weight: 700;
 }
@@ -143,8 +140,6 @@ h2 {
 .highlighted {
   border: 2px solid var(--primary);
 }
-
-/* ---------- BUTTONS ---------- */
 
 .button {
   display: inline-block;
@@ -169,8 +164,6 @@ h2 {
   filter: brightness(0.95);
 }
 
-/* ---------- FOOTER ---------- */
-
 .footer {
   margin-top: 5rem;
   padding: 2rem 1rem;
@@ -178,8 +171,6 @@ h2 {
   font-size: 0.9rem;
   background-color: #ece9f7;
 }
-
-/* ---------- AUTH PAGES ---------- */
 
 .auth-body {
   min-height: 100vh;
