@@ -99,11 +99,6 @@ h2 {
   color: var(--primary-dark);
 }
 
-.graph svg {
-  width: 100%;
-  height: auto;
-}
-
 .pricing-intro {
   max-width: 600px;
 }
