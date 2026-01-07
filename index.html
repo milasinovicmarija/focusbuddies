@@ -182,6 +182,28 @@
     <button id="accept-cookies" class="text">Accept</button>
     <button id="reject-cookies" class="text">Reject</button>
   </div>
+    
+</div>
+  <script>
+  const banner = document.getElementById('cookie-banner');
+
+  if (!localStorage.getItem('cookieConsent')) {
+    banner.style.display = 'flex';
+    setTimeout(() => banner.classList.add('show'), 50);
+  }
+
+  document.getElementById('accept-cookies').addEventListener('click', () => {
+    localStorage.setItem('cookieConsent', 'accepted');
+    banner.classList.remove('show');
+    setTimeout(() => banner.style.display = 'none', 300);
+  });
+
+  document.getElementById('reject-cookies').addEventListener('click', () => {
+    localStorage.setItem('cookieConsent', 'rejected');
+    banner.classList.remove('show');
+    setTimeout(() => banner.style.display = 'none', 300);
+  });
+</script>
   
   <footer class="footer">
     <p>© 2026 FocusBuddies GmbH · Vienna, Austria</p>
@@ -192,7 +214,6 @@
       <a href="imprint.html">Imprint</a>
     </p>
   </footer>
-  
-</div>
+
 </body>
 </html>
